@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube/Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #main {
+        height: 500px;
+        width: 60%;
+        margin: auto;
+
+    }
+
+    iframe {
+        margin-top: 10px;
+        height: 500px;
+        width: 100%;
+    }
+</style>
+
+
+
+<body onload="playVideo()">
+    <nav class="flex"> 
+        <div class="logo flex">
+            <img class="invert gap" src="./images/svg/menu-01-stroke-rounded.svg" alt="">
+            <div class="youtubelogo flex">
+                <img id="youlogo" src="./images/svg/youtube_main_icon.png" alt="">
+                <h3>YouTube</h3>
+            </div>
+        </div>
+
+        <div class="search flex">
+            <input id="query" type="text" placeholder="Search here for">
+            <button onclick="search()">Search</button>
+        </div>
+        <div class="profile flex">
+            <div class="navright flex">
+                <img class="invert gap" src="./images/svg/vertical-stroke-rounded.svg" alt="">
+                <div class="userpro flex">
+                    <img class="invert" src="./images/svg/userpro-circle.svg" alt="">
+                    <h3>sign in</h3>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div id="main">
+        <iframe width="560" id="play_video" height="315" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+</body>
+
+
+
+</html>
+
+<script>
+    let playVideo = () => {
+        let video = JSON.parse(localStorage.getItem("video"));
+        console.log(video);
+
+        let id = video.id.videoId;
+        let play_video = document.getElementById('play_video');
+        play_video.src = `https://www.youtube.com/embed/${id}`;
+
+
+    };
+</script>

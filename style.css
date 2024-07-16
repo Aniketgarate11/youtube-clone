@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body,html{
+    background-color: black;
+}
+nav{
+    /* border: 1px solid white; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+nav .flex img:hover{
+    cursor: pointer;
+}
+.invert{
+    filter: invert();
+}
+.flex{
+    display: flex;
+}
+.gap{
+    margin-right: 10px;
+}
+#youlogo{
+    width: 34px;
+}
+.youtubelogo{
+    gap: 6px;
+}
+.logo{
+    width: 30%;
+}
+.search{
+    width: 40%;
+    justify-content: center;
+    gap: 2px;
+}
+.profile{
+    width: 30%;
+    justify-content: flex-end;
+}
+.userpro{
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 10px;
+    padding: 5px 8px;
+    gap: 8px;
+}
+.search #query{
+    width: 60%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(83, 83, 83);
+    outline: none;
+    color: rgb(190, 184, 184);
+}
+.search button{
+    background-color: rgb(83, 83, 83);
+    border: none;
+    outline: none;
+    padding: 3px 8px;
+    border-radius: 8px;
+}
+.leftbar{
+    /* border: 1px solid white; */
+    width: 200px;
+}
+.home{
+    border-bottom: 1px solid gray;
+}
+.home>h3{
+    margin: 8px 0 5px 20px;
+}
+.homeoption{
+    width: 75%;
+    align-items: center;
+    gap: 35px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.homeoption:hover{
+    width: 79%;
+    cursor: pointer;
+    background-color: rgb(83, 83, 83) ;
+    border-radius: 10px;
+}
+.home>div:last-child{
+    margin-bottom: 5px;
+}
+.home>div:first-child{
+    margin-top: 5px;
+}
+.homesignin p{
+    margin: 5px 0 5px 20px;
+}
+.homesignin div{
+    margin: 5px 0 5px 20px;
+}
+
+.beforesearch{
+       border: 1px solid rgb(83, 83, 83);
+       background-color:  rgb(83, 83, 83);
+       padding: 10px 20px;
+       text-align: center;
+       margin-top: 70px;
+       /* transform: translate(50,50); */
+       /* margin-left: -172px; */
+       border-radius: 20px;
+       width: 100%;
+}
+.beforesearch p{
+    font-weight:lighter;
+   
+}
+.container{
+    width: 100vw;
+    justify-content: center;
+    align-items: start; 
+    flex-wrap: wrap;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-template-rows: auto;
+    gap: 4%;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+    border-top: 1px solid gray;
+    border-width: 80%;
+}
