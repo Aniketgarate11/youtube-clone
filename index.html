@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="flex"> 
+        <div class="logo flex">
+            <img class="invert gap" src="./images/svg/menu-01-stroke-rounded.svg" alt="">
+            <div class="youtubelogo flex">
+                <img id="youlogo" src="./images/svg/youtube_main_icon.png" alt="">
+                <link rel="icon" type="image/x-icon" href="./images/svg/youtube_main_icon.png">
+                <h3>YouTube</h3>
+            </div>
+        </div>
+
+        <div class="search flex">
+            <input id="query" type="text" placeholder="Search here for">
+            <button onclick="search()">Search</button>
+        </div>
+        <div class="profile flex">
+            <div class="navright flex">
+                <img class="invert gap" src="./images/svg/vertical-stroke-rounded.svg" alt="">
+                <div class="userpro flex">
+                    <img class="invert" src="./images/svg/userpro-circle.svg" alt="">
+                    <h3>sign in</h3>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <main class="flex">
+        <div class="leftbar">
+            <div class="home">
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/homestroke.svg" alt="">
+                    <!-- <h4>Home</h4> -->
+                     <h4><a href="/index.html">Home</a></h4>
+                </div>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/youtube-stroke-rounded.svg" alt="">
+                    <h4>Shorts</h4>
+                </div>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/Subscription.svg" alt="">
+                    <h4>Subscriptions</h4>
+                </div>
+            </div>
+            <div class="home">
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/historyYou.svg" alt="">
+                    <h4>You</h4>
+                </div>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/History.svg" alt="">
+                    <h4>History</h4>
+                </div>
+            </div>
+            <div class="home homesignin">
+               <p>Sign in to like videos, comment, and subscribe.</p>
+               <div style="width: 50%;" class="userpro flex">
+                <img class="invert" src="./images/svg/userpro-circle.svg" alt="">
+                <h3>sign in</h3>
+            </div>
+            </div>
+
+            <div class="home">
+                <h3>explore</h3>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/trending.svg" alt="">
+                    <h4>Trending</h4>
+                </div>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/Shopping.svg" alt="">
+                    <h4>History</h4>
+                </div>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/music.svg" alt="">
+                    <h4>Music</h4>
+                </div>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/Movies.svg" alt="">
+                    <h4>Movies</h4>
+                </div>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/Subscription.svg" alt="">
+                    <h4>Live</h4>
+                </div>
+            </div>
+            <div class="home">
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/settings.svg" alt="">
+                    <h4>Setting</h4>
+                </div>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/flag-report.svg" alt="">
+                    <h4>Report History</h4>
+                </div>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/help-circle.svg" alt="">
+                    <h4>Help</h4>
+                </div>
+                <div class="homeoption flex">
+                    <img class="invert" src="./images/svg/feedback-01-stroke-rounded.svg" alt="">
+                    <h4>Send fedback</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div></div>
+            <div class="beforesearch">
+                <h3>Try searching to get started</h3>
+                <p>Start watching videos to help us build a feed of videos you'll like</p>
+            </div>
+            <div></div>
+        
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
