@@ -1,4 +1,7 @@
-const api_key = 'AIzaSyCLE5uq_NP8-fDT4QGwKIrfc6ad4136Rhc';
+import api_key from './apikey.js';
+
+// const api_key = require('./apikey.js');
+
 
 
 // let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=Thor%20&key=${api_key}`;
@@ -45,7 +48,7 @@ let saveVideo =(data)=>{
     window.location.href="video.html";
 }
 
-let search = async () =>{
+window.search = async () =>{
 
     try {
         let query = document.getElementById('query').value;
